@@ -31,3 +31,19 @@
 	body {
 		background-color: #e9ebee ; 
 	}
+
+#title {
+	 background-color: white;
+    font-size: 23px;
+    color : #365899 ;
+}	
+
+#description {
+    background-color: aliceblue ;
+
+}
+
+#votes {
+
+
+}

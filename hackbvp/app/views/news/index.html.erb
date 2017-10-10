@@ -1,2 +1,23 @@
-<h1>News#index</h1>
-<p>Find me in app/views/news/index.html.erb</p>
+<h1>#Trending news</h1>
+
+<% @data.each do |i| %>
+
+<div id="title"> 
+<%= i.title %>
+</div>
+<br>
+<div id="description">
+<%= i.description %>
+</div>
+
+<div id="votes">
+<span> Votes : </span> 
+<%= i.votes %>
+<br> 
+<br>
+<br> 
+<br>
+</div>
+
+<% end %>
+
