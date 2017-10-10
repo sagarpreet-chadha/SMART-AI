@@ -48,7 +48,9 @@
     padding: 68px;
 
 }
-
+.votesclass {
+	color: white ; background-color: red ;
+}
 #votes {
    padding-left: 85%;
    font-size: 27px;
@@ -59,11 +61,20 @@
 
 }
 
+#votes_id {
+	font-size: 35px;
+}
+
+.r_ir_class {
+	    font-size: 27px ;
+}
+
 #yes-no {
 	padding : 2px ;
-	 width: 500px ;
+	 
 	 margin-right: 0px ;
 	 padding-top: 3% ;
+	     width: 100px ;
 }
 
 #yes {

@@ -7,7 +7,7 @@
 <%= i.title %>
 </div>
 <br>
-<div id="outer">
+<div id="outer" >
 <div id="image">
 <%= image_tag i.avatar_file_name %>
 </div>
@@ -16,23 +16,27 @@
 <%= i.description %>
 </div>
 
-<div id="yes-no">
 
-	<div id="yes">
-		YES
-	</div>
-	<div id="no">
-	NO
-	</div>
+
+</div>
+<div id="yes-no<%= i.id %>" class="r_ir_class" >
+	<span> Please give your answer : </span>
+	<span id="yes">
+
+	<%= link_to "RELEVANT NEWS",  news_vote_path(i.id) , id: "yes#{i.id}" , remote: true , method: :post %>
+	</span>
+	&nbsp; &nbsp; &nbsp; &nbsp; 
+	<span id="no">
+		<%= link_to "IRRELEVANT NEWS",  news_devote_path(i.id) , remote: true , method: :post %>
+	</span>
 
 </div>
 
-</div>
 
 
-
-<div id="votes">
-<span style="color: white ; background-color: red ">Votes :  
+<div id="votes_id">
+VOTES :
+<span id="votes<%= i.id %>" style="color: white ; background-color: red "> 
 <%= i.votes %> 
 </span>
 </div>
