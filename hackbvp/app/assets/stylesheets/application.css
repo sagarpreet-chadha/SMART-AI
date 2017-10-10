@@ -41,15 +41,27 @@
 }	
 
 #description {
-    background-color: aliceblue ;
+    background-color: #d0e4f5 ;
+        margin-right: 23%;
+    padding-top: 11%;
+    font-size: 19px;
+    padding: 68px;
 
 }
 
 #votes {
-
+   padding-left: 85%;
+   font-size: 27px;
 
 }
 
 #image {
-	    padding-left: 30% ;
+
+}
+
+#outer {
+	background-color: white ;
+	display: flex ;
+	flex-direction: row ;
+	flex-wrap: nowrap ;
 }

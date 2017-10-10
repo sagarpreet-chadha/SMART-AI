@@ -1,25 +1,34 @@
 <h1>#Trending news</h1>
 
 <% @data.each do |i| %>
-<div style="background-color: white">
+
+
 <div id="title"> 
 <%= i.title %>
 </div>
-
 <br>
+<div id="outer">
 <div id="image">
 <%= image_tag i.avatar_file_name %>
 </div>
-<br>
+
 <div id="description">
 <%= i.description %>
 </div>
 
+<div id="yes-no">
+</div>
+
+</div>
+
+
+
 <div id="votes">
-<span> Votes : </span> 
-<%= i.votes %>
+<span style="color: white ; background-color: red ">Votes :  
+<%= i.votes %> 
+</span>
 </div>
-</div>
+
 <br> 
 <br>
 <br> 
