@@ -33,8 +33,10 @@
 	}
 
 #title {
-	 background-color: white;
-    font-size: 23px;
+    background-color: aqua;
+    font-size: 27px;
+    font-family: fantasy;
+    padding-left: 23px;
     color : #365899 ;
 }	
 
@@ -46,4 +48,8 @@
 #votes {
 
 
+}
+
+#image {
+	    padding-left: 30% ;
 }
