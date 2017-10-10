@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+.fbclass {
+	background-color: #4267b2 ;
+	height : 70px ;
+	margin: 0px ;
+
+
+}
+.logo {
+		color: white ;
+		    padding-left: 45%;
+    font-size: 30px;
+    
+	}
+
+	body {
+		background-color: #e9ebee ; 
+	}
