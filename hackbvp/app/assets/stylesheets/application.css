@@ -42,7 +42,7 @@
 
 #description {
     background-color: #d0e4f5 ;
-        margin-right: 23%;
+     
     padding-top: 11%;
     font-size: 19px;
     padding: 68px;
@@ -57,6 +57,23 @@
 
 #image {
 
+}
+
+#yes-no {
+	padding : 2px ;
+	 width: 500px ;
+	 margin-right: 0px ;
+	 padding-top: 3% ;
+}
+
+#yes {
+	background-color: #55fb22 ;
+	width: 40px ;
+
+}
+#no {
+	background-color: red ;
+	width: 40px ;
 }
 
 #outer {
