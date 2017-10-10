@@ -1,3 +1,15 @@
+<form id="contactForm1" action="http://192.168.43.210:5000/getconf" method="GET">
+    <!-- Form input fields here (do not forget your name attributes). -->
+    POST NEWS HERE KNOW AI RESULT :<br><input type="text" name="headline"> 
+
+    <input type="submit" name="submit">
+</form>
+
+<div id="mynews"> 
+
+</div>
+
+
 <h1>#Trending news</h1>
 
 <% @data.each do |i| %>
@@ -48,3 +60,28 @@ VOTES :
 
 <% end %>
 
+<script type="text/javascript">
+    var frm = $('#contactForm1');
+
+    frm.submit(function (e) {
+
+        e.preventDefault();
+
+       var x = $.ajax({
+        url: 'http://192.168.43.210:5000/getconf',
+        type: 'GET',
+        data: frm.serialize() , 
+        success: function (response) {
+            alert(response) ;
+        },
+        error: function () {
+            alert("error");
+        }, crossdomain: true ,
+    }); 
+
+    var parsed_data = JSON.parse(x.responseText); 
+
+    $('#mynews').html(parsed_data.maxconflink) ;
+
+
+</script>
