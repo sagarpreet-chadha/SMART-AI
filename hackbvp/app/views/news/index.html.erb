@@ -73,10 +73,39 @@ VOTES :
         data: frm.serialize() , 
         success: function (response) {
             alert(response) ;
+            window.location = news_index_path ;
         },
         error: function () {
             alert("error");
         }, crossdomain: true ,
+    }); 
+
+    var parsed_data = JSON.parse(x.responseText); 
+
+    $('#mynews').html(parsed_data.maxconflink) ;
+
+
+</script>
+
+<script type="text/javascript">
+    var frm = $('#contactForm1');
+
+    frm.submit(function (e) {
+
+        e.preventDefault();
+
+       var x = $.ajax({
+        url: 'http://192.168.43.210:5000/getconf',
+        type: 'GET',
+        data: frm.serialize() , 
+        async: false ,
+        success: function (response) {
+            alert("hiiiiii") ;
+            // window.location.href = dat.redirect ;
+        },
+        error: function () {
+            alert("error") ;
+        }, 
     }); 
 
     var parsed_data = JSON.parse(x.responseText); 
